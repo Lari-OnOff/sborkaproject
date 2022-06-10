@@ -1,0 +1,51 @@
+<div class="content">
+
+	{{ legend(3) }}
+
+	<form method="POST" action="#" class="billing">
+
+		<h2>Billing Information</h2>
+
+		<div class="billing__payment-system">
+			{{ radiobutton({
+				group: 'payment-system',
+				index: 1,
+				caption: 'Pay with Credit Card',
+				checked: true
+			}) }}
+			{{ radiobutton({
+				group: 'payment-system',
+				index: 2,
+				icon: 'paypal'
+			}) }}
+		</div>
+
+		{{ creditcard({
+			className: 'billing__card-data',
+			id: 'cc',
+			name: 'cc'
+		}) }}
+
+		<div class="billing__checks">
+			{{ checkbox({
+				id: 'save-card',
+				name: 'save-card',
+				caption: 'Save information of this credit card',
+				checked: true
+			}) }}
+			{{ checkbox({
+				id: 'accept-tos',
+				name: 'accept-tos',
+				caption: 'I accept the <a href="#">terms and comditions</a> and the <a href="#">Privacy Policies</a>',
+				required: true
+			}) }}
+		</div>
+
+		<div class="billing__buttons">
+			<a href="#" class="btn">Back</a>
+			<input type="submit" value="Check Out" class="btn _blue">
+		</div>
+
+	</form>
+
+</div>

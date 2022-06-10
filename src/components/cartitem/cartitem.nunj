@@ -1,0 +1,20 @@
+{% macro cartitem(params) %}
+<div class="cart-item" data-price="{{ params.price }}" data-count="{{ params.count }}">
+	<div class="cart-item__image" style="background-image: url('assets/images/{{ params.image }}')"></div>
+	<div class="cart-item__info">
+		<div class="cart-item__description">{{ params.description }}</div>
+		<div class="cart-item__count-price">
+			<div class="cart-item__count">
+				<div class="cart-item__count-button _minus"></div>
+				<div class="cart-item__count-value">{{ params.count }}</div>
+				<div class="cart-item__count-button _plus"></div>
+			</div>
+			<div class="cart-item__price">$&nbsp;{{ params.price }}</div>
+		</div>
+		<svg width="19" height="18" viewBox="0 0 19 18" xmlns="http://www.w3.org/2000/svg" class="cart-item__remove">
+			<path d="M10.756 9L18.7001 16.9629L17.6639 18L9.70834 10.0487L1.75274 18L0.716553 16.9629L8.66064 9L0.716553 1.03713L1.75274 0L9.70834 7.95134L17.6639 0L18.7001 1.03713L10.756 9Z"/>
+		</svg>
+
+	</div>
+</div>
+{% endmacro %}

@@ -1,0 +1,21 @@
+.pricing {
+	&__item {
+		font-size: 14px;
+		height: 34px;
+		line-height: 34px;
+
+		&._bold {
+			font-size: 18px;
+			font-weight: bold;
+		}
+	}
+
+	&__caption {
+		float: left;
+	}
+
+	&__value {
+		float: right;
+		padding-right: 15px;
+	}
+}

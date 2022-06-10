@@ -1,0 +1,56 @@
+{
+	"menuItems": [
+		{
+			"name": "Women's",
+			"path": "#"
+		},
+		{
+			"name": "Men's",
+			"path": "#"
+		},
+		{
+			"name": "Home",
+			"path": "#"
+		},
+		{
+			"name": "Travel",
+			"path": "#"
+		},
+		{
+			"name": "Beauty",
+			"path": "#"
+		},
+		{
+			"name": "Sale",
+			"path": "#"
+		}
+	],
+	"legendItems": [
+		{
+			"name": "Account"
+		},
+		{
+			"name": "Shipping"
+		},
+		{
+			"name": "Billing"
+		},
+		{
+			"name": "Review"
+		}
+	],
+	"cartItems": [
+		{
+			"description": "Amet minim mollit non deserunt ullamco est sit",
+			"price": 525,
+			"count": 1,
+			"image": "jacket.png"
+		},
+		{
+			"description": "Amet minim mollit non",
+			"price": 525,
+			"count": 1,
+			"image": "boot.png"
+		}
+	]
+}

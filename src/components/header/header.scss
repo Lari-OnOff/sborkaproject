@@ -1,0 +1,59 @@
+.header {
+	align-items: center;
+	border-bottom: solid 1px $border-color;
+	display: flex;
+	flex-direction: row;
+	height: 80px;
+	justify-content: center;
+	padding: 0 30px;
+	position: relative;
+
+	&__logo {
+		font-size: 18px;
+		line-height: 21px;
+		position: absolute;
+		left: 30px;
+		top: 26px;
+
+		svg {
+			fill: black;
+			height: 29px;
+			margin-right: -3px;
+			width: 22px;
+		}
+	}
+
+	&__buttons {
+		height: 24px;
+		position: absolute;
+		right: 30px;
+		top: 28px;
+
+		& > a {
+			cursor: pointer;
+			display: inline-block;
+			height: 24px;
+			position: relative;
+			width: 24px;
+
+			&[data-count]::after {
+				background-color: $primary-color;
+				border-radius: 100%;
+				color: white;
+				content: attr(data-count);
+				font-size: 10px;
+				height: 13px;
+				line-height: 13px;
+				position: absolute;
+				right: -6px;
+				text-align: center;
+				top: -6px;
+				width: 13px;
+			}
+		}
+
+		& > a + a {
+			margin-left: 26px;
+		}
+	}
+}

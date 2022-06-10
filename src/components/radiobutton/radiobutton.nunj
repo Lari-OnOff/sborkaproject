@@ -1,0 +1,10 @@
+{% from "../../components/icon/icon.nunj" import icon %}
+{% macro radiobutton(params) %}
+<div class="radiobutton">
+	<input type="radio" name="{{ params.group }}" id="{{ params.group }}-{{ params.index }}"{% if params.checked %} checked{% endif %}>
+	<label for="{{ params.group }}-{{ params.index }}">
+		{% if params.icon %}<svg class="icon"><use xlink:href="#icon-{{ params.icon }}"/></svg>{% endif %}
+		{% if params.caption %}{{ params.caption }}{% endif %}
+	</label>
+</div>
+{% endmacro %}

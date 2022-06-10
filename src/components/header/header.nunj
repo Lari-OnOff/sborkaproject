@@ -1,0 +1,28 @@
+<div class="header">
+	<div class="header__logo">
+		{{ icon({
+			iconName: 'logo-letter-s',
+			className: 'icon'
+		}) }}
+		{{ icon({
+			iconName: 'logo-letter-p',
+			className: 'icon'
+		}) }}
+		<span>.shop</span>
+	</div>
+
+	{{ menu() }}
+	<div class="header__buttons">
+
+		<a href="#">{{ icon({
+				iconName: 'search',
+				className: 'icon',
+				attributes: 'style="width: 24px; height: 24px; fill: black"'
+			}) }}</a>
+		<a href="#" data-count="2">{{ icon({
+				iconName: 'cart',
+				className: 'icon',
+				attributes: 'style="width: 24px; height: 24px; fill: black"'
+			}) }}</a>
+	</div>
+</div>

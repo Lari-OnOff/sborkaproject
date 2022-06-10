@@ -1,0 +1,25 @@
+<div class="sidebar">
+
+	<div class="sidebar__block">
+		<h2>My basket</h2>
+		{% for item in cartItems %}
+			{{ cartitem(item) }}
+		{% endfor %}
+	</div>
+
+	<div class="sidebar__block">
+		<h2>Promo code</h2>
+		<div class="promo">
+			<input type="text" class="input promo__input" placeholder="Placeholder Text">
+			<a href="#" class="btn _blue promo__button">Apply</a>
+		</div>
+	</div>
+
+	<div class="sidebar__block pricing">
+		{{ price('Subtotal',1050) }}
+		{{ price('Tax',100) }}
+		{{ price('Shipping',150) }}
+		{{ price('Total',1300,true) }}
+	</div>
+
+</div>

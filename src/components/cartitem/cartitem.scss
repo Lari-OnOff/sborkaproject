@@ -1,0 +1,93 @@
+.cart-item {
+	align-items: flex-start;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	height: 100px;
+	justify-content: space-between;
+	margin-top: 30px;
+	position: relative;
+
+	& + & {
+		margin-top: 40px;
+	}
+
+	&__image {
+		background: transparent none no-repeat scroll center;
+		background-size: contain;
+		height: 100px;
+		width: 100px;
+	}
+
+	&__info {
+		display: inline-block;
+		width: calc(100% - 112px);
+	}
+
+	&__description {
+		line-height: 17px;
+		max-width: 180px;
+		min-height: 34px;
+	}
+
+	&__count-price {
+		height: 20px;
+		margin-top: 15px;
+	}
+
+	&__count {
+		align-items: center;
+		display: inline-flex;
+		flex-direction: row;
+		flex-wrap: nowrap;
+		height: 20px;
+		justify-content: space-between;
+		-webkit-touch-callout: none;
+		-webkit-user-select: none;
+		-moz-user-select: none;
+		user-select: none;
+		width: 82px;
+
+		&-button {
+			background: transparent none no-repeat scroll center;
+			background-size: contain;
+			border: solid 1px black;
+			border-radius: 100%;
+			box-sizing: border-box;
+			cursor: pointer;
+			height: 20px;
+			width: 20px;
+
+			&._minus {
+				background-image: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAiIGhlaWdodD0iMjAiIHZpZXdCb3g9IjAgMCAyMCAyMCIgZmlsbD0iYmxhY2siIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTQuODkzMzYgOS4zMzMzM0gxNi44ODI0VjEwLjY2NjdINC44OTMzNlY5LjMzMzMzWiIvPjwvc3ZnPg==');
+			}
+
+			&._plus {
+				background-image: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAiIGhlaWdodD0iMjAiIHZpZXdCb3g9IjAgMCAyMCAyMCIgZmlsbD0iYmxhY2siIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTExLjQ1NDkgOS4zNjUyM0gxNS44MjU5VjEwLjYxNTJIMTEuNDU0OVYxNUgxMC4yMDZWMTAuNjE1Mkg1LjgzNTAzVjkuMzY1MjNIMTAuMjA2VjVIMTEuNDU0OVY5LjM2NTIzWiIvPjwvc3ZnPg==');
+			}
+		}
+	}
+
+	&__price {
+		display: inline-block;
+		height: 20px;
+		line-height: 20px;
+		margin-left: 25px;
+		vertical-align: top;
+	}
+
+	&__remove {
+		cursor: pointer;
+		fill: $border-color;
+		height: 20px;
+		position: absolute;
+		right: 0;
+		top: 0;
+		transition: fill $default-transition-duration $default-transition-function;
+		width: 20px;
+
+		&:hover {
+			fill: $primary-color;
+		}
+	}
+}

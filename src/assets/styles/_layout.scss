@@ -1,0 +1,30 @@
+.wrapper {
+	position: relative;
+}
+
+.container {
+	box-sizing: content-box;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	margin: auto;
+}
+
+.content {
+	padding: 64px;
+	width: 75%;
+}
+
+.sidebar {
+	border-left: solid 1px $border-color;
+	min-height: calc(100vh - 81px);
+	min-width: 410px;
+	width: 25%;
+}
+
+@media screen and (max-width: 1199px) {
+	.content {
+		padding: 60px 50px;
+		width: 100%;
+	}
+}

@@ -1,0 +1,24 @@
+{% extends "../ext/base.nunj" %}
+
+{% from "../../components/menu/menu.nunj" import menu %}
+{% from "../../components/button/button.nunj" import button %}
+{% from "../../components/icon/icon.nunj" import icon %}
+{% from "../../components/legend/legend.nunj" import legend %}
+{% from "../../components/radiobutton/radiobutton.nunj" import radiobutton %}
+{% from "../../components/creditcard/creditcard.nunj" import creditcard %}
+{% from "../../components/checkbox/checkbox.nunj" import checkbox %}
+{% from "../../components/cartitem/cartitem.nunj" import cartitem %}
+{% from "../../components/price/price.nunj" import price %}
+
+{% block content %}
+
+	{% include '../../components/header/header.nunj' %}
+
+	<div class="container">
+
+		{% include '../parts/_content.nunj' %}
+
+		{% include '../parts/_sidebar.nunj' %}
+
+	</div>
+{% endblock content %}

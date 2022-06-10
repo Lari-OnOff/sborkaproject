@@ -1,0 +1,6 @@
+{% macro price(caption,value,bold=false) %}
+<div class="pricing__item{% if bold %} _bold{% endif %}">
+	<div class="pricing__caption">{{ caption }}</div>
+	<div class="pricing__value">$&nbsp;{{ value }}</div>
+</div>
+{% endmacro %}

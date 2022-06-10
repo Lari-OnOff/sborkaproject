@@ -1,0 +1,7 @@
+{% macro legend(activeItem=1) %}
+<div class="legend">
+	{% for item in legendItems %}
+		<div class="legend__item{% if loop.index == activeItem %} _active{% endif %}">{{ item.name }}</div>
+	{% endfor %}
+</div>
+{% endmacro %}

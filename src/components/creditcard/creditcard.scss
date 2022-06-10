@@ -1,0 +1,48 @@
+.credit-card {
+	border: solid 1px $border-color;
+	border-radius: 5px;
+	box-shadow: 0 0 32px rgba(0, 0, 0, 0.19);
+	box-sizing: border-box;
+	padding: 0 30px 45px;
+
+	&__input-group {
+		margin-top: 20px;
+		width: 100%;
+
+		& > label {
+			color: #555770;
+			font-size: 12px;
+			font-weight: 500;
+			line-height: 24px;
+		}
+
+		& input {
+			width: 100%;
+
+			&[id$="-name"] {
+				text-transform: uppercase;
+			}
+		}
+
+	  	&._oneline {
+			display: inline-block;
+			width: calc((100% - 90px) / 4);
+
+			& + & {
+				margin-left: 28px;
+			}
+		}
+	}
+
+	&__number {
+		align-items: flex-start;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: nowrap;
+		justify-content: space-between;
+
+		& > input {
+			width: calc((100% - 90px) / 4);
+		}
+	}
+}
